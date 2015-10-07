@@ -132,7 +132,7 @@ public class TreeCellTest {
             treeCell = TreeCell.delete(array[i], treeCell);
 
             System.out.println(Arrays.toString(array));
-            System.out.println(remove(array, array[i]));
+//            System.out.println(remove(array, array[i]));
             assertEquals(inorder(treeCell), remove(array, array[i]));
         }
     }
