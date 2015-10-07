@@ -91,7 +91,7 @@ public class TreeCellTest {
             TreeCell treeCell = createTree();
             treeCell = TreeCell.delete(i, treeCell);
 //            System.out.println(remove(array1,i));
-            assertEquals(inorder(treeCell), remove(array1, i));
+            assertEquals( remove(array1, i),inorder(treeCell));
         }
     }
     @Test
@@ -105,7 +105,7 @@ public class TreeCellTest {
 
 //            System.out.println(Arrays.toString(array));
 //            System.out.println(remove(array, array[i]));
-            assertEquals(inorder(treeCell), remove(array, array[i]));
+            assertEquals(remove(array, array[i]),inorder(treeCell));
         }
     }
     @Test
@@ -119,7 +119,7 @@ public class TreeCellTest {
 
             System.out.println(Arrays.toString(array));
 //            System.out.println(remove(array, array[i]));
-            assertEquals(inorder(treeCell), remove(array, array[i]));
+            assertEquals(remove(array, array[i]),inorder(treeCell));
         }
     }
     @Test
@@ -133,7 +133,7 @@ public class TreeCellTest {
 
             System.out.println(Arrays.toString(array));
 //            System.out.println(remove(array, array[i]));
-            assertEquals(inorder(treeCell), remove(array, array[i]));
+            assertEquals(remove(array, array[i]),inorder(treeCell));
         }
     }
 
