@@ -61,7 +61,6 @@ public class TreeCellTest {
         }
         return root;
     }
-    private static Integer[] array1 = new Integer[]{1,2,3,4,5,6,7,8,9,10,11,12,13};
     public static String inorder(TreeCell root) {
         if (root == null) return new String();
             return inorder(root.getLeft())+root.getDatum()+" "+inorder(root.getRight());
@@ -88,6 +87,7 @@ public class TreeCellTest {
     @Test
     public void delete1(){
         for(int i =1;i<=13;i++) {
+            Integer[] array1 = new Integer[]{1,2,3,4,5,6,7,8,9,10,11,12,13};
             TreeCell treeCell = createTree();
             treeCell = TreeCell.delete(i, treeCell);
 //            System.out.println(remove(array1,i));
@@ -98,6 +98,7 @@ public class TreeCellTest {
     public void delete2(){
         Integer[] array = new Integer[]{2,3,4,5,9,7,8,11,15,16,84,13,85};
         for(int i =0;i<array.length;i++) {
+            array = new Integer[]{2,3,4,5,9,7,8,11,15,16,84,13,85};
             TreeCell treeCell = createTree(array);
 //            System.out.println("test 2 =>"+inorder(treeCell));
 //            System.out.println(array[i]);
@@ -112,6 +113,7 @@ public class TreeCellTest {
     public void delete3(){
         Integer[] array = new Integer[]{15,12,13,4,17,5,19,11};
         for(int i =0;i<array.length;i++) {
+            array = new Integer[]{15,12,13,4,17,5,19,11};
             TreeCell treeCell = createTree(array);
             System.out.println("test 3 =>"+inorder(treeCell));
             System.out.println(array[i]);
@@ -126,6 +128,7 @@ public class TreeCellTest {
     public void delete4(){
         Integer[] array = new Integer[]{15,12,11,10,17,2,4,19,20};
         for(int i =0;i<array.length;i++) {
+            array = new Integer[]{15,12,11,10,17,2,4,19,20};
             TreeCell treeCell = createTree(array);
             System.out.println("test 3 =>"+inorder(treeCell));
             System.out.println(array[i]);
